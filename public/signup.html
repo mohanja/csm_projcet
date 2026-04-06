@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Signup</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Create Account</h2>
+
+    <input id="name" placeholder="Full Name">
+    <input id="mobile" placeholder="Mobile Number">
+    <input id="email" placeholder="Enter Gmail (example@gmail.com)">
+    <input type="date" id="dob" max="">
+    <input type="password" id="password" placeholder="Password" onkeyup="checkPassword()">
+    <input type="password" id="confirm" placeholder="Confirm Password">
+    
+
+<div class="small">
+    <p id="len"><span class="icon">✖</span> Minimum 8 characters</p>
+    <p id="upper"><span class="icon">✖</span> Capital letter (A-Z)</p>
+    <p id="lower"><span class="icon">✖</span> Small letter (a-z)</p>
+    <p id="number"><span class="icon">✖</span> Number (0-9)</p>
+    <p id="symbol"><span class="icon">✖</span> Symbol (@$!%*?&)</p>
+</div>
+    <button onclick="signup()">Signup</button>
+
+    <p id="msg"></p>
+
+    <p class="small">Already have an account? <a href="login.html">Login</a></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

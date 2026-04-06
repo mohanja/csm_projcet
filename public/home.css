@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+}
+
+/* Header */
+.header {
+    width: 100%;
+    background: #2c3e50;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Welcome */
+.welcome {
+    text-align: center;
+    font-size: 60px;
+    margin: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+/* Grid FIX */
+.main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 30px;
+    width: 100%;
+}
+
+/* Cards */
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Logout */
+.logout-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}

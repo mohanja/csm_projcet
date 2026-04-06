@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+<div class="header">
+    <h2>Student Portal Dashboard</h2>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+</div>
+
+<div class="welcome" id="welcome"></div>
+
+<div class="main">
+    <div class="card"><h3>Profile</h3><p>View your details</p></div>
+    <div class="card"><h3>Courses</h3><p>Check subjects</p></div>
+    <div class="card"><h3>Results</h3><p>View marks</p></div>
+    <div class="card"><h3>Attendance</h3><p>Track attendance</p></div>
+    <div class="card"><h3>Notifications</h3><p>Latest updates</p></div>
+    <div class="card"><h3>Settings</h3><p>Manage account</p></div>
+</div>
+
+<script>
+const name = localStorage.getItem("username");
+
+// FIX undefined
+if (!name) {
+    document.getElementById("welcome").innerText = "Welcome, User";
+} else {
+    document.getElementById("welcome").innerText = "Welcome, " + name;
+}
+
+function logout() {
+    localStorage.removeItem("username");
+    window.location.href = "login.html";
+}
+</script>
+
+</body>
+</html>

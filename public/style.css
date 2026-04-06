@@ -1,0 +1,144 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container Animation */
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    animation: fadeIn 1s ease;
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Input focus animation */
+input:focus {
+    border-color: #4facfe;
+    box-shadow: 0 0 8px rgba(79,172,254,0.6);
+    transform: scale(1.02);
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 10px;
+    background: #4facfe;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+/* Button hover animation */
+button:hover {
+    background: #007bff;
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Avatar animation */
+.avatar {
+    width: 80px;
+    height: 80px;
+    background: #4facfe;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px auto;
+    animation: pop 0.5s ease;
+}
+
+/* Avatar pop effect */
+@keyframes pop {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+/* Checkbox animation */
+.small {
+    text-align: left;
+    margin-top: 10px;
+}
+
+.small p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 5px 0;
+    font-size: 13px;
+    color: #555;
+    transition: 0.3s;
+}
+
+/* Icon style */
+.icon {
+    font-size: 16px;
+    color: red;
+    transition: 0.3s;
+}
+
+/* Success state */
+.valid {
+    color: green;
+}
+
+.valid .icon {
+    color: green;
+}
+
+/* Links */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Message */
+#msg {
+    margin-top: 10px;
+    color: red;
+}
